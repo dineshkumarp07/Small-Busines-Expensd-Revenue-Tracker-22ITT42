@@ -1,0 +1,64 @@
+/* ...existing code... */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the navbar itself is styled properly */
+.navbar {
+    position: fixed; /* Fix the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the navbar spans the full width */
+    background-color: #007bff; /* Navbar background color */
+    color: white;
+    padding: 10px 20px;
+    z-index: 1000; /* Ensure the navbar stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-links li a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+.navbar-links li a.active-link {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* ...existing code... */

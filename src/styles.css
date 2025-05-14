@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, p, ul, li {
+    margin: 10px 0;
+}
+
+input, textarea, button {
+    font-size: 16px;
+}
+nav {
+  background-color: #222;
+  color: #fff;
+}
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+}
+
+.navbar-links li a.active-link {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+/* Button styles */
+.navbar-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.nav-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    background-color: #0056b3;
+}
+
+/* Nav link styles */
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    margin-right: 15px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+}
+
+.nav-link:active {
+    background-color: #0056b3;
+    color: white;
+}

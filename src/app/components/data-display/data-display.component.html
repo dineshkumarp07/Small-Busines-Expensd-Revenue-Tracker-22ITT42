@@ -1,0 +1,77 @@
+<div class="data-display">
+    <h2>Expenses</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Amount (₹)</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let expense of expenses">
+                <td *ngIf="editingExpense?._id !== expense._id">{{ expense.title }}</td>
+                <td *ngIf="editingExpense?._id === expense._id">
+                    <input *ngIf="editingExpense" [(ngModel)]="editingExpense.title" />
+                </td>
+                <td *ngIf="editingExpense?._id !== expense._id">₹{{ expense.amount }}</td>
+                <td *ngIf="editingExpense?._id === expense._id">
+                    <input *ngIf="editingExpense" [(ngModel)]="editingExpense.amount" type="number" />
+                </td>
+                <td *ngIf="editingExpense?._id !== expense._id">{{ expense.category }}</td>
+                <td *ngIf="editingExpense?._id === expense._id">
+                    <input *ngIf="editingExpense" [(ngModel)]="editingExpense.category" />
+                </td>
+                <td *ngIf="editingExpense?._id !== expense._id">{{ expense.date | date }}</td>
+                <td *ngIf="editingExpense?._id === expense._id">
+                    <input *ngIf="editingExpense" [(ngModel)]="editingExpense.date" type="date" />
+                </td>
+                <td>
+                    <button *ngIf="editingExpense?._id !== expense._id" (click)="editExpense(expense)">Edit</button>
+                    <button *ngIf="editingExpense?._id === expense._id" (click)="saveExpense()">Save</button>
+                    <button (click)="deleteExpense(expense._id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Revenues</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Amount (₹)</th>
+                <th>Category</th>
+                <th>Date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let revenue of revenues">
+                <td *ngIf="editingRevenue?._id !== revenue._id">{{ revenue.title }}</td>
+                <td *ngIf="editingRevenue?._id === revenue._id">
+                    <input *ngIf="editingRevenue" [(ngModel)]="editingRevenue.title" />
+                </td>
+                <td *ngIf="editingRevenue?._id !== revenue._id">₹{{ revenue.amount }}</td>
+                <td *ngIf="editingRevenue?._id === revenue._id">
+                    <input *ngIf="editingRevenue" [(ngModel)]="editingRevenue.amount" type="number" />
+                </td>
+                <td *ngIf="editingRevenue?._id !== revenue._id">{{ revenue.category }}</td>
+                <td *ngIf="editingRevenue?._id === revenue._id">
+                    <input *ngIf="editingRevenue" [(ngModel)]="editingRevenue.category" />
+                </td>
+                <td *ngIf="editingRevenue?._id !== revenue._id">{{ revenue.date | date }}</td>
+                <td *ngIf="editingRevenue?._id === revenue._id">
+                    <input *ngIf="editingRevenue" [(ngModel)]="editingRevenue.date" type="date" />
+                </td>
+                <td>
+                    <button *ngIf="editingRevenue?._id !== revenue._id" (click)="editRevenue(revenue)">Edit</button>
+                    <button *ngIf="editingRevenue?._id === revenue._id" (click)="saveRevenue()">Save</button>
+                    <button (click)="deleteRevenue(revenue._id)">Delete</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

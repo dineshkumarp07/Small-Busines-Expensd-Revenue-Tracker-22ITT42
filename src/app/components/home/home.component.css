@@ -1,0 +1,70 @@
+.home {
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+
+.learn-more {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.learn-more:hover {
+    background-color: #555;
+}
+
+.financial-summary {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.financial-summary h2 {
+    text-align: center;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.financial-summary p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.financial-summary button {
+    display: block;
+    width: 100%; /* Ensure the button stays within the box */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+
+.financial-summary button:hover {
+    background-color: #0056b3;
+}

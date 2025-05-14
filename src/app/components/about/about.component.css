@@ -1,0 +1,58 @@
+.about {
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 28px;
+}
+
+h3 {
+    margin-top: 15px;
+    color: #555;
+}
+
+ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.about-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* Ensure background is white */
+    color: #333; /* Ensure text color is visible */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.about-container h1 {
+    text-align: center;
+    color: #007bff; /* Ensure heading color is visible */
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Ensure paragraph text color is visible */
+}
+
+.about-container ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+.about-container ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555; /* Ensure list item text color is visible */
+}

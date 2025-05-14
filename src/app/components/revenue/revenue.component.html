@@ -1,0 +1,18 @@
+<div class="revenue-form">
+    <h2>Revenue</h2>
+    <form (ngSubmit)="addRevenue()">
+        <label for="title">Title:</label>
+        <input type="text" id="title" [(ngModel)]="revenue.title" name="title" required />
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" [(ngModel)]="revenue.amount" name="amount" required />
+
+        <label for="category">Category:</label>
+        <input type="text" id="category" [(ngModel)]="revenue.category" name="category" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" [(ngModel)]="revenue.date" name="date" required />
+
+        <button type="submit">Revenue</button>
+    </form>
+</div>
